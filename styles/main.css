@@ -1,0 +1,403 @@
+* {
+box-sizing: border-box;
+}
+html{
+    min-height: 100%;
+}
+ul { 
+    padding-left: 1em;
+ }
+ 
+body {
+    background-color: #F2F2F2;
+    font-family: helvetica, sans-serif;
+    margin: 0;
+}
+
+.content{
+    width: 90vw;
+    max-width: 1800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* Header */
+header{
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.logo{
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    letter-spacing: 0.3em;
+}
+
+.header-element{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.header-element:hover{
+    color: grey;
+}
+
+/* Bild */
+/* Bildausschnitt soll sich beim Scrollen verändern*/
+
+.image-container{
+    margin-top: 2.5rem;  
+    position: relative;
+    
+}
+.landing-image{
+    width: 100%;
+    
+}
+.image-text-container {
+    position: absolute;
+    top: 6rem;
+    left: 6rem;
+    text-align: center;
+    color: white;
+}
+
+.image-text-header{
+    font-size: 7rem;
+    letter-spacing: 0.1em;
+    margin: 0;
+}
+
+.image-text-sub{
+   font-size: 2.5rem;
+   line-height: 1.7em;
+   margin-top: 6rem;
+   font-weight: lighter;
+}
+
+/* Über uns */
+
+.über_uns{
+    background-image:
+        linear-gradient(90deg, #7f7f7f 30%, transparent) ;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.über_uns_text{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: white;
+    font-weight: lighter;
+    font-size: 2rem;
+    line-height: 175%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.kontakt_link{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.kontakt_link:hover{
+    color: lightgrey;
+ }
+
+.über_uns_image{
+    width: 33.3%;
+/* wie kann ich eine bevorzugte minimal-Breite angeben? Bild soll nicht verzerren beim zoomen*/
+}
+
+/* Produkte */
+
+.produkte{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3rem;
+    margin-bottom: 3rem;
+}
+
+.produkte_item{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.produkte_item p{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 150%;
+}
+
+.produkt_link{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.produkt_link:hover{
+    color: lightgrey;
+ }
+
+/* Footer */
+
+/* wie kann ich einen Sticky footer erzeugen der immer unten angezeigt wird, egal wie viel Inhalt die Seite hat?*/
+footer{
+    background-color: #7f7f7f;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.footer_text{
+    width: 90vw;
+    max-width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_logo{
+    letter-spacing: 0.3em;
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+}
+
+.footer_menu{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0;
+}
+
+.footer_link{
+    color: white;
+    text-decoration: none;
+}
+
+.footer_link:hover{
+    color: lightgrey;
+}
+.footer_impressum{
+    margin: 0;
+    font-weight: lighter;
+    line-height: 150%;
+    letter-spacing: 0.15em;
+}
+
+
+/* Referenzen */
+
+/* Image Slider Start */
+
+.slideshow-container{
+    background-color: #0000;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    padding: 0;
+    width: 90vw;
+    height: 80vh;
+}
+
+.slideshow{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slideshow-item{
+   
+    margin:auto;
+    width: 60%;
+    
+    
+}
+
+slideshow-item:nth-child(1){
+    animation-delay: 0s;
+}
+
+slideshow-item:nth-child(2){
+    animation-delay: 10s;
+}
+
+slideshow-item:nth-child(3){
+    animation-delay: 20s;
+}
+
+slideshow-item:nth-child(4){
+    animation-delay: 30s;
+}
+
+slideshow-item:nth-child(5){
+    animation-delay: 40s;
+}
+
+
+
+.slideshow-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slideshow-item-text{
+    max-width: 50%;
+    position: relative;
+    top: 0%;
+    left: 0;
+    transform: translateY(-200%);
+    background-color: rgba(0,0,0,.8);
+    color: #fff;
+    padding: 3rem 3rem;
+}
+
+.slideshow-item-text h5{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+}
+
+.slideshow-item-text p{
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+/* Image Slider End */
+
+
+
+/* Umbau Sanierung */
+
+.heading {
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: lighter;
+}
+
+
+.umbau_sanierung_description{
+    font-size: 1rem;
+    font-weight: lighter;
+    line-height: 150%;
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+}
+
+/* Kontakt */
+
+.kontakt{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.kontakt_item{
+    font-size: 1rem;
+    font-weight: lighter;
+    line-height: 150%;
+}
+/* ALU PVC */
+
+.alu_pvc_container{
+    display: flex;
+}
+
+
+
+.alu_pvc_heading{
+    background-image:
+        linear-gradient(90deg, transparent, #7f7f7f 40%, #7f7f7f 60%, transparent) ;
+    color: #F2F2F2;
+    padding: 5px;
+    margin-top: 5rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.alu_pvc{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    width: 66%;
+    font-weight: lighter;
+}
+
+.image_tuer{
+    width: 30%;
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 10px;
+    margin-right: 3rem;
+    align-self: flex-end;
+}
+
+/* HOLZ */
+
+.holz_heading{
+    background-image:
+        linear-gradient(90deg, transparent, #7f7f7f 40%, #7f7f7f 60%, transparent) ;
+    color: #F2F2F2;
+    padding: 5px;
+    margin-top: 5rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.holz_container{
+    display: flex;
+    margin-bottom: 5rem;
+}
+.holz{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    width: 60%;
+    font-weight: lighter;
+}
+
+.image_fenster{
+    width: 30%;
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 10px;
+    margin-right: 3rem;
+    align-self: flex-end;
+}
